@@ -1,0 +1,88 @@
+/*
+// Style for Gallery module
+//
+// webtrees: Web based Family History software
+// Copyright (C) wooc_mygallery webtrees development team.
+//
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+*/
+
+/* Main menu icon */
+li#menu-my_gallery {background:url(gallery.png) no-repeat 50% 50%;}
+li#menu-my_gallery ul li {background:url(gallery-small.png) no-repeat left 0;}
+html[dir=rtl] li#menu-my_gallery ul li {background-position:right 0;}
+li#menu-my_gallery ul li#menu-my_gallery-edit {background:url(submenu_edit.png) no-repeat left 0;}
+html[dir=rtl] #menu-my_gallery ul li#menu-my_gallery-edit {background-position:right 0;}
+li#menu-my_gallery li:hover {background-color:#f4f0ed;}
+li#menu-my_gallery ul li#menu-my_gallery-edit:hover {background-color:#f4f0ed;}
+
+/* ======= gallery table styles ========== */
+table.gallery {background-color: #E0E0E0;margin: 5px 0 50px 5px;width: 98%;}
+table.gallery  tr.odd td {background-color: #E7EEF3;}
+div.gallery_title {background-color: #E0E0E0;margin: 1em 0;padding: .25em;font-weight: bold;width: 98%;}
+div.gallery_body {clear: both;margin: 1em 0;padding: 1em;}
+.gallery_italic {font-style: italic;font-weight: bold;font-size: 90%;padding: 0 10px;}
+.gallery_top {float:right;}
+.gallery_edit {float:right;}
+html[dir='rtl'] .gallery_top {float:left;}
+html[dir='rtl'] .gallery_edit {float:left;}
+
+div#galleriffic-page {overflow:hidden; padding:20px; width:80%;}
+div#galleriffic-page h2 {font-weight:normal; text-align:center;}
+div#galleriffic-page {margin:0 auto; width:960px;}
+div#galleriffic-header {padding:0 2em 0 0;}
+div.galleriffic-content {clear:both; display:none;}
+div.galleriffic-content a:hover,div.galleriffic-content a:active {text-decoration:underline;}
+div.navigation a.pageLink {background-position:center center; background-repeat:no-repeat; display:block; float:left; height:77px; line-height:77px; margin:2px; position:relative; width:16px;}
+div.controls {height:23px; margin-top:5px;}
+div.controls a {padding:5px;}
+div.ss-controls {float:left;}
+div.nav-controls {float:right;}
+div.slideshow-container,div.loader,div.slideshow a.advance-link {width:545px;}
+div.slideshow a:hover {background:transparent;}
+div.loader,div.slideshow a.advance-link,div.caption-container {height:540px;}
+div.slideshow-container {clear:both; float:left; height:532px; position:relative;}
+div.loader {background-image:url(loading.gif); background-position:center; background-repeat:no-repeat; left:0; position:absolute; top:0;}
+div.slideshow span.image-wrapper {display:block; left:0; position:absolute; top:30px;}
+div.slideshow a.advance-link {display:block; line-height:540px; text-align:center;}
+div.slideshow img {border-color:#CCC; border-style:solid; border-width:1px; max-height:530px; max-width:530px;}
+div.caption-container {color:#62584D; float:right; margin-top:30px; position:relative;}
+div.photo-index {bottom:0px; left:0px; padding-bottom:0px; padding-left:12px; padding-right:12px; padding-top:0px; position:absolute;}
+span.image-caption {display:block; left:0; position:absolute; top:0;}
+div.caption-container,span.image-caption {width:334px;}
+div.caption {padding:0 12px;}
+div.image-title {font-size:1.4em; font-weight:700;}
+div.image-desc {line-height:1.3em; max-height:450px; overflow:auto; padding-top:12px;}
+div.links {border-left:1px solid grey; float:right; padding:0 0 0 5px;}
+div.links p {margin:0 0 5px 0;}
+div.download {margin-top:8px;}
+div.navigation-container {float:left; left:50%; position:relative;}
+div.navigation {float:left; position:relative; margin:10px 0;}
+ul.thumbs {float:left; margin:0; padding:0; position:relative;}
+ul.thumbs li {float:left; list-style:none; margin:2px; padding:0;}
+a.thumb {display:block; padding:1px;}
+ul.thumbs li.selected a.thumb {background:#000;}
+ul.thumbs img {border:none; display:block; height:75px; max-width:75px;}
+div.pagination {clear:both; left:-50%; position:relative;}
+div.pagination a,div.pagination span.current,div.pagination span.ellipsis {border:1px solid #ccc; display:block; float:left; margin-right:2px; padding:4px 7px 2px; position:relative;}
+div.pagination a:hover {background-color:#EEE; text-decoration:none;}
+div.pagination span.current {background-color:#000; border-color:#000; color:#FFF; font-weight:700;}
+div.pagination span.ellipsis {border:none; padding:5px 0 3px 2px;}
+div.gallery-gutter {clear:both; padding-bottom:20px;}
+div.navigation a.prev {background-image:url(../../images/prevPageArrow.gif);}
+div.navigation a.next {background-image:url(../../images/nextPageArrow.gif);}
+div.galleriffic-content a,div.navigation a,div.slideshow a.advance-link:hover,div.slideshow a.advance-link:active,div.slideshow a.advance-link:visited {text-decoration:none;}
+div.slideshow a.advance-link:focus,div.navigation a.pageLink:focus,a.thumb:focus {outline:none;}
