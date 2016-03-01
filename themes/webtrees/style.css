@@ -21,11 +21,11 @@
 */
 
 /* Main menu icons */
-li.wooc_mygallery {background:url(gallery.png) no-repeat 50% 50%}
-li.wooc_mygallery ul li {background:url(gallery-small.png) no-repeat left 0}
-html[dir=rtl] li.wooc_mygallery ul li {background-position:right 0}
-li.wooc_mygallery ul li.wooc_mygallery-edit {background:url(submenu_edit.png) no-repeat left 0}
-html[dir=rtl] .wooc_mygallery ul li.wooc_mygallery-edit {background-position:right 0}
+#primary-menu-nav .primary-menu > li.wooc_mygallery {background:url(gallery.png) no-repeat 50% 50%}
+#primary-menu-nav .primary-menu > li.wooc_mygallery ul li {background:url(gallery-small.png) no-repeat left 0}
+html[dir=rtl] #primary-menu-nav .primary-menu > li.wooc_mygallery ul li {background-position:right 0}
+#primary-menu-nav .primary-menu > li.wooc_mygallery ul li.wooc_mygallery-edit {background:url(submenu_edit.png) no-repeat left 0}
+html[dir=rtl] #primary-menu-nav .primary-menu > .wooc_mygallery ul li.wooc_mygallery-edit {background-position:right 0}
 #gallery_config {text-align:left;}
 html[dir='rtl'] #gallery_config {direction:rtl; text-align:right;}
 #gallery_config th, #gallery_config td {vertical-align:top;}
